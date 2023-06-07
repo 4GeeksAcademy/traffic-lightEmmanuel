@@ -1,12 +1,118 @@
 
-/* 
+*{
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-image: url("https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.container{
+    margin:auto;
+    /* border: solid 1px black; */
+    width: 200px;
+    height: 400px;
+}
+.top{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(255, 200, 0) 100%);
+    width: 40px;
+    height: 100px;
+    margin: auto;
+}
+.light{
+    border-radius: 10px;
+    background-color: black;
+    border: 3px solid rgb(255, 234, 0);
+    width: 80%;
+    height: 299px;
+    margin: auto;
+    padding-top: 10px;
+}
 
-*/
+.red{
+    background-color: rgb(131, 0, 0);
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.yellow{
+    background-color: rgb(141, 125, 0);
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.green{
+    background-color: rgb(0, 124, 0);
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+}
+.redOn{
+    background-color: rgb(255, 0, 0);
+    filter: drop-shadow(3px 3px 1.3rem rgb(255, 0, 0));
+    -webkit-animation: pulseRed 0.9s linear 0.2s infinite;
+    
+}
+.yellowOn{
+    background-color: rgb(255, 225, 0);
+    filter: drop-shadow(3px 3px 1.3rem rgb(238, 255, 0));
+    -webkit-animation: pulseYellow 0.9s linear 0.2s infinite;
+}
+.greenOn{
+    background-color: rgb(13, 255, 0);
+    filter: drop-shadow(3px 3px 1.3rem rgb(0, 255, 13));
+    -webkit-animation: pulseGreen 0.9s linear 0.2s infinite;
+}
+.btn{
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 30px !important;
+    width: 300px;
+    background-color: yellow;
+    
+    -webkit-animation: pulseYellow 0.9s linear 0.2s infinite;
+}
+.boton{
+    text-align: center;
+    margin: auto;
+}
+
+.purple{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    background-color: rgb(204, 0, 255);
+    filter: drop-shadow(3px 3px 1.3rem rgb(255, 0, 217));
+    -webkit-animation: pulsePurple 0.9s linear 0.2s infinite;
+}
+
+@-webkit-keyframes pulseRed {
+    0% { box-shadow:0 0 16px #ff0000, inset 0 0 16px #df0000; }
+    50% { box-shadow:0 0 32px #ff0000, inset 0 0 28px #ff0000; }
+    100% { box-shadow:0 0 16px #ff0000, inset 0 0 16px #ff0000; }
+  }
+  @-webkit-keyframes pulseYellow {
+    0% { box-shadow:0 0 16px #ffea00, inset 0 0 16px #ffd900; }
+    50% { box-shadow:0 0 32px #fff200, inset 0 0 28px #ffea00; }
+    100% { box-shadow:0 0 16px #fbff00, inset 0 0 16px #fbff00; }
+  }
+  @-webkit-keyframes pulseGreen {
+    0% { box-shadow:0 0 16px #00f800, inset 0 0 16px #00ff00; }
+    50% { box-shadow:0 0 32px #4dff00, inset 0 0 28px #3bfd00; }
+    100% { box-shadow:0 0 16px #00ff22, inset 0 0 16px #1aff00; }
+  }
+  @-webkit-keyframes pulsePurple {
+    0% { box-shadow:0 0 16px #ff00ea, inset 0 0 16px #df00d4; }
+    50% { box-shadow:0 0 32px #ff00d0, inset 0 0 28px #ff00d9; }
+    100% { box-shadow:0 0 16px #ff00f2, inset 0 0 16px #d400ff; }
+  }
